@@ -1,0 +1,211 @@
+<div class="container">
+      <div class="chart">
+      <div class="chart-row chart-period">
+          <div class="chart-row-item"></div>
+          <span>9:00am</span><span>9:30am</span><span>10:00am</span>
+          <span>10:30am</span><span>11:00pm</span><span>11:30pm</span>
+          <span>12:00pm</span><span>12:30pm</span><span>01:00pm</span>
+          <span>01:30pm</span><span>02:00pm</span><span>02:30pm</span> <span>03:00pm</span>
+          <span>03:30am</span><span>04:00am</span><span>04:30am</span>
+          <span>05:00am</span><span>05:30pm</span><span>06:00pm</span>
+          <span>06:30pm</span><span>07:00pm</span><span>07:30pm</span>
+          <span>08:00pm</span><span>08:30pm</span><span>09:00pm</span> 
+      </div>
+      <div class="chart-row chart-lines">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span>
+      </div>
+      <div class="chart-row">
+        <div class="chart-row-item">Administrative Officer</div>
+        <ul class="chart-row-bars">
+          <li class="chart-li-one">Daily Attendance Check<br>19/Jan/22-19/Jan/22</li>
+        </ul>
+      </div>
+      <div class="chart-row">
+        <div class="chart-row-item">Design team</div>
+        <ul class="chart-row-bars">
+          <li class="chart-li-two-a">Automate the solidworks<br>19/Jan/22 -22/Jan/22</li>
+                    
+        </ul>
+      </div>
+      <div class="chart-row">
+        <div class="chart-row-item">Design team incharge</div>
+        <ul class="chart-row-bars">
+          <li class="chart-li-three">Conduct daily status meetiing<br>19/Jan/22-19/Jan/22</li>
+        </ul>
+      </div>
+      <div class="chart-row">
+        <div class="chart-row-item">Developer</div>
+        <ul class="chart-row-bars">
+          <li class="chart-li-four">Add a filter option in Task Manager<br>19/Jan/22-24/Jan/22</li>
+        </ul>
+      </div>
+      <div class="chart-row">
+        <div class="chart-row-item">Manual Tester</div>
+        <ul class="chart-row-bars">
+          <li class="chart-li-five">Test the new Application v2.3
+          <br>19/Jan/22-22/Jan/22</li>
+        </ul>
+      </div>
+      <div class="chart-row">
+        <div class="chart-row-item">Automation Tester</div>
+        <ul class="chart-row-bars">
+          <li class="chart-li-six">Automate the APK using APPIUM<br>19/Jan/22-20/Jan/22</li>
+        </ul>
+      </div>
+      <div class="chart-row">
+        <div class="chart-row-item">Design team incharge</div>
+        <ul class="chart-row-bars">
+          <li class="chart-li-seven">Review Daily Tasks<br>19/Jan/22-19/Jan/22<li>
+          
+        </ul>
+      </div>
+       <div class="chart-row">
+        <div class="chart-row-item">Design team incharge</div>
+        <ul class="chart-row-bars">
+          <li class="chart-li-eight">Conduct daily status meetiing<br>19/Jan/22-19/Jan/22<li>
+          
+        </ul>
+      </div>
+       <div class="chart-row">
+        <div class="chart-row-item">Manager</div>
+        <ul class="chart-row-bars">
+          <li class="chart-li-nine">Discussion about the progress<br>19/Jan/22-19/Jan/22<li>
+          
+        </ul>
+      </div>
+       
+</div>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+  }
+  .container {
+      max-width: 1200px;
+      min-width: 3000px;
+      margin: 0 auto;
+      padding: 50px;      
+  }
+ 
+  .chart {
+      display: grid;
+      border: 1px solid #000;
+      position: relative;
+      overflow: hidden;  
+  }
+  .chart-row {
+    display: grid;      
+    grid-template-columns: 50px 1fr;
+    background-color: #DCDCDC;
+  }
+  .chart-row:nth-child(odd) {
+    background-color: #C0C0C0;
+  }
+  .chart-period {
+    color:  #fff;
+    background-color:  #708090 !important;
+    border-bottom: 5px solid #000; 
+    grid-template-columns: 50px repeat(26, 1fr);
+  }
+  .chart-lines {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    grid-template-columns: 50px repeat(26, 1fr);
+  }
+  .chart-period > span {    
+    text-align: center;
+    font-size: 13px;
+    align-self: center;
+    font-weight: bold;
+    padding: 25px 0;    
+  }
+  .chart-lines > span {
+    display: block;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+ 
+  .chart-row-item {
+    background-color:#808080;
+    border: 1px solid  #000;
+    border-top: 0;
+    border-left: 0;      
+    padding: 20px 0;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+  } 
+
+  .chart-row-bars {
+    list-style: none;
+    display: grid;
+    padding: 5px 0;
+    margin: 0;
+    grid-template-columns: repeat(26, 1fr);
+    grid-gap: 10px 0;
+    border-bottom: 1px solid  #000;
+  }
+  li {
+    font-weight: 450;
+    text-align: left;
+    font-size: 15px;
+    min-height: 15px;
+    background-color:;
+    padding: 5px 15px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  ul .chart-li-one {
+    grid-column: 1/3; 
+    background-color:#0000ff;
+  }
+  ul .chart-li-two-a {
+    grid-column: 4/19; 
+    background-color:#8b0000;
+  }
+ 
+  ul .chart-li-three {
+    grid-column: 13/15; 
+    background-color:#a52a2a;
+  }
+  ul .chart-li-four {
+    grid-column: 1/20; 
+    background-color:#008000;
+  }
+  ul .chart-li-five {
+    grid-column: 4/19; 
+    background-color:#8b008b;
+  }
+  ul .chart-li-six {
+    grid-column: 3/23; 
+    background-color:#008080;
+  }
+  ul .chart-li-seven {
+    grid-column: 20/22; 
+    background-color:#0080FF;
+  }
+ul .chart-li-eight {
+    grid-column: 22/24; 
+    background-color:#ce2029;
+  }
+ul .chart-li-nine {
+    grid-column: 24/26; 
+    background-color:#008000;
+  }
+
+
+
